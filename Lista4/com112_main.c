@@ -11,7 +11,7 @@ void menu()
     printf("Escolha o tamanho do vetor que você deseja criar\n");
     scanf("%d", &n);
 
-    int *v, i, vet[n];
+    int *v, *r, i, vet[n], reg[2];
         
     for (i = 0; i < n; i++)
     {
@@ -27,6 +27,7 @@ void menu()
     printf(" ]\n\n");
 
     v = vet;
+    r = reg;
 
     int opc = 0;
 
@@ -40,15 +41,21 @@ void menu()
     switch (opc)
     {
         case 1:
-            bubble_sort(v, n);
+            bubble_sort(v, r, n);
+            printf("%d ", r[0]);
+            printf("%d", r[1]);
             break;
                 
         case 2:
-            selection_sort(v, n);
+            selection_sort(v, r, n);
+            printf("%d ", r[0]);
+            printf("%d", r[1]);
             break;
                 
         case 3:
-            insertion_sort(v, n);
+            insertion_sort(v, r, n);
+            printf("%d ", r[0]);
+            printf("%d", r[1]);
             break;
             
     }

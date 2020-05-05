@@ -75,4 +75,4 @@ void insertion_sort(int *v, int n, int *r)
 
     r[0] = c;
     r[1] = t;
-}
+} 

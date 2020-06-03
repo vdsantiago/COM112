@@ -1,1 +1,36 @@
+Número de elementos ordenados: 10000
+Método Insertion Sort
+    Tempo de execução: 3.187425s
+    Número de comparações: 24511325
+    Número de movimentações: 24501326
 
+
+Número de elementos ordenados: 10000
+Método Bubble Sort
+    Tempo de execução: 4.920191s
+    Número de comparações: 99980001
+    Número de movimentações: 24501326
+
+Número de elementos ordenados: 10000
+Método Selection Sort
+    Tempo de execução: 3.283119s
+    Número de comparações: 50004999
+    Número de movimentações: 64200
+
+Número de elementos ordenados: 10000
+Método Insertion Sort
+    Tempo de execução: 3.176753s
+    Número de comparações: 24511325
+    Número de movimentações: 24501326
+
+Número de elementos ordenados: 10000
+Método Merge Sort
+    Tempo de execução: 0.003057s
+    Número de comparações: 24631274
+    Número de movimentações: 24634942
+
+Número de elementos ordenados: 10000
+Método Quick Sort
+    Tempo de execução: 0.006276s
+    Número de comparações: 25718943
+    Número de movimentações: 24682982

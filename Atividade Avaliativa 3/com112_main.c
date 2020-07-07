@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "com112_hash.h"
@@ -22,7 +23,10 @@ int main()
 {
   Hash *has;
   struct aluno al;
-  int op, valor, a;
+  int op, valor, a, tamanho;
+
+    printf("Entre com o tamanho do vetor");
+    scanf("%d", &tamanho);
 
     do
     {
@@ -30,7 +34,7 @@ int main()
         switch(op){
 
             case 1: 
-                has = criaHash();
+                has = criaHash(tamanho);
 
                 if(has != NULL)
                 {
@@ -44,13 +48,9 @@ int main()
 
 
             case 2: 
-                a = liberaHash(has);
+                liberaHash(has);
 
-                if(a){
                 printf("\n Tabela hash liberada");
-                }else{
-                printf("\n Tabela hash não foi liberada");
-                }
                 break;
 
             case 3:

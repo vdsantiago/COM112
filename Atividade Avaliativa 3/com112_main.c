@@ -22,7 +22,7 @@ int menu()
 int main() 
 {
   Hash *has;
-  struct aluno al;
+  struct aluno *al;
   int op, valor, a, tamanho;
 
     printf("Entre com o tamanho do vetor");
@@ -57,7 +57,7 @@ int main()
                 printf("\n Digite o valor a ser inserido: ");
                 scanf("%d", &valor);      
 
-                a = insereHash_SemColisao(has, al);
+                a = insereHash_SemColisao(has, *al);
 
                 if(a == 1)
                 {
@@ -86,7 +86,7 @@ int main()
                 break;
                     
             case 5:
-                libera_AVL(has);
+                liberaHash(has);
                 printf("\nFinalizando...\n");
                 break;
 
